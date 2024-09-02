@@ -1,0 +1,36 @@
+version: "3"
+
+tasks:
+  pack:
+    desc: Package and prepare assets for the game.
+    cmds: []
+
+  preview:
+    desc: Preview game assets.
+    cmds:
+      - go run './cmd/studio' preview ./ {{.CLI_ARGS}}
+
+  run:
+    desc: Run the game.
+    cmds:
+      - go run './cmd/game'
+
+  webpack:
+    cmds:
+      - mkdir -p 'assets/web'
+      - cp 'resources/ui/images/icon.png' 'assets/web/favicon.png'
+      - cp 'resources/web/main.css' 'assets/web/main.css'
+      - cp 'resources/web/main.js' 'assets/web/main.js'
+      - cp 'resources/web/index.html' 'assets/index.html'
+      - cp 'resources/web/wasm_exec.js' 'assets/web'
+
+  wasm:
+    env:
+      GOOS: js
+      GOARCH: wasm
+    cmds:
+      - go build -o './assets/web/main.wasm' './cmd/game'
+
+  web:
+    cmds:
+      - go run 'github.com/mokiat/httpserv@v1.0.0' -dir './assets' -host '127.0.0.1'
