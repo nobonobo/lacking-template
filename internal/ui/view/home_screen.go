@@ -10,10 +10,10 @@ import (
 	"github.com/mokiat/lacking/ui/layout"
 	"github.com/mokiat/lacking/ui/std"
 
-	"github.com/mokiat/lacking-template/internal/game/data"
-	"github.com/mokiat/lacking-template/internal/ui/global"
-	"github.com/mokiat/lacking-template/internal/ui/model"
-	"github.com/mokiat/lacking-template/internal/ui/widget"
+	"github.com/nobonobo/lacking-template/internal/game/data"
+	"github.com/nobonobo/lacking-template/internal/ui/global"
+	"github.com/nobonobo/lacking-template/internal/ui/model"
+	"github.com/nobonobo/lacking-template/internal/ui/widget"
 )
 
 var HomeScreen = co.Define(&homeScreenComponent{})

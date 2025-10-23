@@ -1,10 +1,11 @@
 package view
 
 import (
-	"github.com/mokiat/lacking-template/internal/ui/model"
 	co "github.com/mokiat/lacking/ui/component"
 	"github.com/mokiat/lacking/ui/mvc"
 	"github.com/mokiat/lacking/ui/std"
+
+	"github.com/nobonobo/lacking-template/internal/ui/model"
 )
 
 var Application = mvc.EventListener(co.Define(&applicationComponent{}))

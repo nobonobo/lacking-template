@@ -1,4 +1,4 @@
-module github.com/mokiat/lacking-template
+module github.com/nobonobo/lacking-template
 
 go 1.23
 

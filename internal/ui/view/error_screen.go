@@ -11,7 +11,7 @@ import (
 	"github.com/mokiat/lacking/ui/layout"
 	"github.com/mokiat/lacking/ui/std"
 
-	"github.com/mokiat/lacking-template/internal/ui/model"
+	"github.com/nobonobo/lacking-template/internal/ui/model"
 )
 
 type ErrorScreenData struct {

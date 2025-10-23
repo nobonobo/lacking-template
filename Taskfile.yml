@@ -7,7 +7,7 @@ tasks:
       GOWORK: off
     cmds:
       - rm ./resources/licenses.txt
-      - go run github.com/google/go-licenses@v1.6.0 report --ignore github.com/mokiat/lacking-template --template ./resources/licenses.tmpl ./... | fold -w 80 -s > ./resources/licenses.txt
+      - go run github.com/google/go-licenses@v1.6.0 report --ignore github.com/nobonobo/lacking-template --template ./resources/licenses.tmpl ./... | fold -w 80 -s > ./resources/licenses.txt
 
   pack:
     desc: Prepare assets for the game.

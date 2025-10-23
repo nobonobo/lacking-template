@@ -1,12 +1,13 @@
 package ui
 
 import (
-	"github.com/mokiat/lacking-template/internal/ui/global"
-	"github.com/mokiat/lacking-template/internal/ui/view"
 	"github.com/mokiat/lacking/game"
 	"github.com/mokiat/lacking/ui"
 	co "github.com/mokiat/lacking/ui/component"
 	"github.com/mokiat/lacking/ui/mvc"
+
+	"github.com/nobonobo/lacking-template/internal/ui/global"
+	"github.com/nobonobo/lacking-template/internal/ui/view"
 )
 
 func BootstrapApplication(window *ui.Window, gameController *game.Controller) {

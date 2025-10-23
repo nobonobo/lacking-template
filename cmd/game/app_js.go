@@ -8,13 +8,14 @@ import (
 	jsapp "github.com/mokiat/lacking-js/app"
 	jsgame "github.com/mokiat/lacking-js/game"
 	jsui "github.com/mokiat/lacking-js/ui"
-	gameui "github.com/mokiat/lacking-template/internal/ui"
-	"github.com/mokiat/lacking-template/resources"
 	"github.com/mokiat/lacking/app"
 	"github.com/mokiat/lacking/game"
 	"github.com/mokiat/lacking/game/asset"
 	"github.com/mokiat/lacking/ui"
 	"github.com/mokiat/lacking/util/resource"
+
+	gameui "github.com/nobonobo/lacking-template/internal/ui"
+	"github.com/nobonobo/lacking-template/resources"
 )
 
 func runApplication() error {

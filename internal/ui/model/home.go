@@ -3,7 +3,7 @@ package model
 import (
 	"github.com/mokiat/lacking/game"
 
-	"github.com/mokiat/lacking-template/internal/game/data"
+	"github.com/nobonobo/lacking-template/internal/game/data"
 )
 
 func NewHomeModel() *HomeModel {
